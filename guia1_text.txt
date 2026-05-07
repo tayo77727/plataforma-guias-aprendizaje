@@ -1,0 +1,190 @@
+ 
+ 
+GUÍA DE TRABAJO PEDAGÓGICA  
+  
+  
+  
+ MERKY ARIZA - 2025164003  
+LUIZ ALMANZA ARITAMA  – 2025164254  
+LEINER ALVAREZ - 2015164005  
+TAHIR DELGAHAN ARITAMA – 2025164001  
+DANIEL OLIVEROS BENJUMEA - 2025164023   
+  
+  
+  
+MATILDE BOLAÑO GARCÍA  
+DOCENTE  
+   
+  
+  
+UNIVERSIDAD DEL MAGDALENA  
+FACULTAD DE EDUCACIÓN  
+PROGRAMA LICENCIATURA EN TECNOLOGÍA  
+SANTA MARTA  
+5 / 05 / 202 6 
+ 
+  
+INSTITUCION EDUCATIVA PEPITO PEREZ  
+ÁREA:  Educación en tecnología     ASIGNATURA: Tecnología  
+Profesores: Merky Ariza, Tahir Delgahan , Leiner Álvarez , Daniel Olivero , Luis Almanza  
+Estudiante: ________________ ___________    Grado: 11.º  
+Unidad: MICROBIT e IA  
+Eje temático: de los Bloques al Código: Introducción a MicroPython  
+Contenidos: Sintaxis básica (importación de librerías), el bucle infinito (while True), 
+comandos de salida (display.show, display.scroll) y pausas (sleep).  
+Tiempo: una semana.  
+Descripción: Al finalizar esta guía, serás capaz de traducir la lógica visual de bloques a 
+instrucciones reales en MicroPython. Comprenderás cómo "hablarle" a la Micro:bit 
+mediante texto para crear mensajes dinámicos y animaciones, logrando que una simple 
+tarjeta se co nvierta en una herramienta de comunicación para tu comunidad.  
+Propósito de formación del área  
+Formar una persona capaz de resolver problemas mediante el uso de tecnologías y la 
+aplicación del pensamiento computacional a su quehacer humano y social.  
+Objetivo  
+Capacitar al estudiante en la transición de la programación visual por bloques al 
+lenguaje textual MicroPython, permitiéndole comprender la sintaxis básica y la lógica de 
+control necesaria para interactuar con el hardware de la Micro:bit de manera autónoma . 
+Desempeños  
+• Traduce la lógica de programación visual (bloques) a la sintaxis textual de 
+MicroPython para comprender la evolución del desarrollo de software.  
+ 
+• Construye programas básicos utilizando comandos de salida (display) y pausas 
+(sleep) para interactuar con el hardware de forma precisa.  
+ 
+• Analiza la eficiencia del código escrito frente a los bloques, identificando las 
+ventajas de la flexibilidad que ofrece Python en proyectos complejos.  
+ 
+• Propone soluciones tecnológicas simples que utilicen la pantalla LED de la 
+Micro:bit para resolver problemas de comunicación en entornos sociales.  
+ • Evalúa su propio proceso de aprendizaje, identificando errores comunes en la 
+escritura de código y proponiendo correcciones inmediatas.  
+Pregunta esencial  
+Si los bloques son las piezas de construcción, el código es la materia prima: ¿De qué 
+manera el paso de una programación visual a una textual amplía las posibilidades de 
+crear soluciones tecnológicas más precisas y personalizadas para las necesidades de 
+nuestra comunidad?  
+Contenido  
+El Gran Salto: ¿Bloques o Código?  
+¿Qué tan útil encontraste la programación por bloques ? 
+¿Crees que puedes hacer lo mismo con programación por bloques y con programación 
+tradicional ? 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Seguramente en grados anteriores usaste MakeCode (bloques). Es genial porque no te 
+deja cometer errores de ortografía. Sin embargo, en el mundo real, los ingenieros y 
+creadores de IA usan código escrito.  
+Las Reglas del Juego: Sintaxis Básica  
+Para que la Micro:bit no se confunda, debemos seguir una estructura clara. Mira este 
+ejemplo de un "Hola Mundo" técnico:  
+ 
+ 
+ 
+Las partes de este código son:  
+ 
+Imagina que escribes Display.Scroll (con mayúsculas). ¿Crees que la Micro:bit lo 
+entendería? ¿Por qué la precisión es más importante en el texto que en los bloques?  
+Taller de Aplicación: "Hackeando la Comunicación"  
+Instrucciones: abre el editor en python.microbit.org.  
+Fase 1:  el traductor humano   
+Escribe un código que simule un "Latido de Corazón".  
+Pista: usa Image.HEART y Image.HEART_SMALL con un sleep(500) entre ellos.  
+Fase 2: Reto de Innovación Social  
+Situación: en Santa Marta, hay muchos turistas que no hablan español. Diseña un 
+"Traductor de Bolsillo" con tu Micro:bit que alterne entre un ícono (ej. una flecha hacia 
+la derecha) y la palabra "BAÑO" o "EXIT".  
+• ¿Cómo ayudaría esto a la inclusión en tu ciudad?  
+ 
+ 
+ 
+ 
+ 
+Fase 4: Reflexión Crítica  
+Responde brevemente:  
+¿Por qué crees que se debe aprender MicroPython en vez  de seguir programando en 
+bloques ? 
+_________________________________________________________________________________
+_________________________________________________________________________________  
+Experiencia  Metacognitiva  
+Antes de entregar, califica tu propio proceso:  
+¿Qué sentiste al escribir tu primera línea de código sin usar bloques?  
+_________________________________________________________________________________
+_________________________________________________________________________________
+_________________________________________________________________________________
+_________________________________________________________________________________  
+ 
+¿Qué  errores cometiste  y cómo  los solucionaste?  
+_________________________________________________________________________________
+_________________________________________________________________________________  
+_________________________________________________________________________________
+_________________________________________________________________________________  
+ 
+¿Qué fue  lo más difícil de entender o aplicar?  
+_________________________________________________________________________________
+_________________________________________________________________________________  
+ 
+¿Mi diseño final cumple con el objetivo de la actividad ? 
+_________________________________________________________________________________
+_________________________________________________________________________________  
+   Rubrica de evaluación  
+Criterio  Superior (4.6 - 
+5.0)  Alto (4.0 - 4.5)  Básico (3.0 - 
+3.9)  Bajo (1.0 - 
+2.9)  
+Traducción  Traduce 
+bloques a 
+código sin 
+errores de 
+lógica.  Traduce casi 
+todos los 
+bloques con 
+pocos errores.  Traduce algunos 
+bloques, pero 
+presenta errores 
+de lógica.  Tiene 
+dificultad 
+para 
+traducir 
+bloques a 
+código.  
+Sintaxis  Usa 
+correctamente 
+comandos, 
+paréntesis y 
+dos puntos.  Presenta pocos 
+errores de 
+sintaxis.  Presenta varios 
+errores de 
+sintaxis que 
+debe corregir.  Los errores 
+de sintaxis 
+impiden 
+ejecutar el 
+código.  
+Pensamiento 
+Crítico  Analiza el 
+código, 
+detecta 
+errores y 
+propone 
+mejoras.  Detecta algunos 
+errores y plantea 
+soluciones.  Reconoce 
+errores con 
+ayuda del 
+docente.  Tiene 
+dificultad 
+para 
+analizar y 
+corregir el 
+código.  
+ 
+Recursos Tecnológicos Utilizados  
+Basado en el contenido de la guía y el propósito de formación del área, los recursos 
+necesarios para desarrollar esta clase son:  
+La página web: https://microbit.org/  
+Hardware: Computadores con acceso a internet . 

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 2: Machine Learning Aplicado</title>
+  <meta name="description"
+    content="Módulo 2: Entrena modelos de Machine Learning y aplícalos a proyectos reales con Micro:bit.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">⚡ Plataforma</a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="modulo1.html">Módulo 1</a>
+        <a href="modulo2.html">Módulo 2</a>
+        <a href="modulo3.html">Módulo 3</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger"
+        aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="page-header">
+      <div class="page-header__breadcrumb">
+        <a href="index.html"><i class="ph-bold ph-house"></i></a>
+        <i class="ph-bold ph-caret-right"></i>
+        <span>Módulo 2</span>
+      </div>
+      <h1><i class="ph-bold ph-brain" style="color:var(--color-accent-cyan)"></i> Machine Learning Aplicado</h1>
+      <p>Entrena tu primer modelo de inteligencia artificial y aplica ML a proyectos con Micro:bit.</p>
+      <div style="max-width:400px;margin-top:var(--space-lg)">
+        <div class="module-card__progress-label"><span>Progreso del Módulo</span><span id="mod2ProgressText">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__fill" id="mod2ProgressFill" style="width:0%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Single session, no tabs needed but keep consistent look -->
+    <div class="session-tabs">
+      <button class="session-tab active" data-tab="panel-s3"><i class="ph-bold ph-number-circle-three"></i> Sesión
+        3</button>
+    </div>
+
+    <div class="session-panel active" id="panel-s3">
+      <h3 style="margin-bottom:var(--space-lg)">Sesión 3: El Corazón de la IA — Entrenamiento de Modelos</h3>
+
+      <!-- Guide Info Banner -->
+      <div class="guide-banner">
+        <div class="guide-banner__meta">
+          <span><i class="ph-bold ph-calendar-blank"></i> Tiempo: 1 semana</span>
+          <span><i class="ph-bold ph-graduation-cap"></i> Grado 11.º · Tecnología</span>
+          <span><i class="ph-bold ph-map-pin"></i> I.E. Pepito Pérez · Santa Marta</span>
+        </div>
+        <p class="guide-banner__desc">Al finalizar esta guía, comprenderás y ejecutarás el proceso técnico mediante el cual una máquina <strong>"aprende"</strong>, diferenciando entre el estudio por patrones y la simple memorización. Aplicarás métricas de evaluación como precisión y sensibilidad para medir la efectividad de una Inteligencia Artificial.</p>
+      </div>
+
+      <div class="session-layout__grid">
+        <div>
+          <!-- Video -->
+          <div class="video-area">
+            <div class="video-area__placeholder">
+              <i class="ph-bold ph-video"></i>
+              <p>Video tutorial · Entrenamiento de modelos ML</p>
+              <p style="font-size:var(--fs-xs);margin-top:var(--space-sm)">Próximamente: Embed de YouTube/Vimeo</p>
+            </div>
+          </div>
+
+          <!-- Objective -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-target"></i> Objetivo</h4>
+            <p>Comprender, aplicar y proponer procesos de entrenamiento de modelos de Machine Learning, tomando como base un conjunto de datos (dataset) al cual aplicar algoritmos, métricas de evaluación y técnicas de optimización para garantizar <strong>predicciones precisas y éticas</strong>.</p>
+          </div>
+
+          <!-- Essential Question -->
+          <div class="content-section content-section--highlight">
+            <h4><i class="ph-bold ph-question"></i> Pregunta Esencial</h4>
+            <p><em>Si el entrenamiento de modelos de Machine Learning permite que la tecnología "aprenda" a identificar patrones complejos, ¿qué ventajas o desventajas traería para el desarrollo humano el que nunca se hubiera descubierto la forma de entrenar algoritmos, obligándonos a depender únicamente de la programación tradicional basada en reglas fijas?</em></p>
+          </div>
+
+          <!-- Learning Outcomes -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-list-checks"></i> Desempeños</h4>
+            <ul class="learning-list">
+              <li><i class="ph-bold ph-check-circle"></i> Comprende la lógica de los algoritmos de entrenamiento y la importancia de la división de datos (Entrenamiento/Testeo).</li>
+              <li><i class="ph-bold ph-check-circle"></i> Aplica procesos de entrenamiento a un modelo de ML usando herramientas como Teachable Machine, validando con métricas de precisión y sensibilidad.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Compara el comportamiento de un modelo ante datos nuevos, identificando Sobreajuste vs. Subajuste.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Propone y diseña ajustes en los parámetros de entrenamiento para optimizar la respuesta del modelo.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Argumenta con sentido crítico el impacto de los sesgos en el entrenamiento de modelos y la transparencia algorítmica.</li>
+            </ul>
+          </div>
+
+          <!-- Key Concepts -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-book-open"></i> Las Reglas del Juego: ¿Cómo aprende una IA?</h4>
+            <p>Para que un modelo aprenda correctamente, seguimos una estructura lógica. No es solo "lanzar datos", es seguir estas reglas:</p>
+            <div class="concepts-grid concepts-grid--2">
+              <div class="concept-card concept-card--cyan">
+                <span class="concept-card__icon"><i class="ph-bold ph-database"></i></span>
+                <h6>El Dataset (Los Apuntes)</h6>
+                <p>Es la información histórica. Se divide en <strong>Entrenamiento</strong> (para estudiar) y <strong>Testeo</strong> (para el examen final).</p>
+              </div>
+              <div class="concept-card concept-card--purple">
+                <span class="concept-card__icon"><i class="ph-bold ph-git-branch"></i></span>
+                <h6>El Algoritmo (La Estrategia)</h6>
+                <p>Es el método que usa la IA para encontrar patrones. ¿Buscamos tendencias o clasificamos imágenes?</p>
+              </div>
+              <div class="concept-card concept-card--green">
+                <span class="concept-card__icon"><i class="ph-bold ph-chart-line-up"></i></span>
+                <h6>La Evaluación (La Nota)</h6>
+                <p>Usamos métricas como la <strong>Precisión</strong> para saber si la IA está aprendiendo o solo memorizando.</p>
+              </div>
+              <div class="concept-card concept-card--orange">
+                <span class="concept-card__icon"><i class="ph-bold ph-wrench"></i></span>
+                <h6>La Optimización (El Ajuste)</h6>
+                <p>Si la IA falla, "ajustamos las tuercas" de la fórmula matemática para que falle menos la próxima vez.</p>
+              </div>
+            </div>
+
+            <div class="alert-box alert-box--info" style="margin-top:var(--space-lg)">
+              <i class="ph-bold ph-lightbulb"></i>
+              <p><strong>Ejemplo de lógica:</strong> Si Modelo identifica Perro → Y es realmente un Gato → Error aumenta → Optimizar parámetros. <em>Es decir: si la IA se equivoca, el sistema calcula qué tan lejos estuvo de la verdad y ajusta sus reglas internas para no repetir el error.</em></p>
+            </div>
+          </div>
+
+          <!-- Parameters -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-sliders-horizontal"></i> Componentes Clave que Transforman tu Modelo</h4>
+            <div class="params-list">
+              <div class="param-item">
+                <div class="param-item__icon param-item__icon--1"><i class="ph-bold ph-speedometer"></i></div>
+                <div>
+                  <h6>Tasa de Aprendizaje (Learning Rate)</h6>
+                  <p>Define qué tan rápido aprende la IA. Si es muy alta, la IA "salta" las conclusiones; si es muy baja, tardará siglos. Es como el acelerador de un carro.</p>
+                </div>
+              </div>
+              <div class="param-item">
+                <div class="param-item__icon param-item__icon--2"><i class="ph-bold ph-repeat"></i></div>
+                <div>
+                  <h6>Número de Épocas (Epochs)</h6>
+                  <p>Es la cantidad de veces que la IA lee el conjunto de datos completo. Muchas épocas pueden causar <strong>Sobreajuste</strong>; pocas pueden causar <strong>Subajuste</strong>.</p>
+                </div>
+              </div>
+              <div class="param-item">
+                <div class="param-item__icon param-item__icon--3"><i class="ph-bold ph-cpu"></i></div>
+                <div>
+                  <h6>Capacidad del Modelo</h6>
+                  <p>Define qué tan complejo es el cerebro de la IA. Un modelo con mucha capacidad puede memorizar en lugar de aprender si el problema es simple.</p>
+                </div>
+              </div>
+              <div class="param-item">
+                <div class="param-item__icon param-item__icon--4"><i class="ph-bold ph-thermometer"></i></div>
+                <div>
+                  <h6>Función de Pérdida (Loss Function)</h6>
+                  <p>Es el "termómetro" del error. Le dice a la máquina qué tan lejos está de la respuesta correcta. Entre más pequeña sea la pérdida, mejor es el modelo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Concept Table -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-table"></i> El Mapa de Conceptos</h4>
+            <p>Para dominar el entrenamiento de una IA, recuerda esta tabla comparativa de las etapas:</p>
+            <div class="rubric-table-wrap">
+              <table class="rubric-table">
+                <thead>
+                  <tr>
+                    <th>Etapa del Proceso</th>
+                    <th>Ejemplo Práctico</th>
+                    <th>Uso en el Modelo</th>
+                    <th>¿Cuándo usarlo?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Entrenamiento</strong></td>
+                    <td>Estudiar 100 fotos de gatos.</td>
+                    <td>Usar el 80% del Dataset.</td>
+                    <td>Para que la IA busque patrones y aprenda reglas.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Prueba (Testeo)</strong></td>
+                    <td>Examen con 20 fotos nuevas.</td>
+                    <td>Usar el 20% del Dataset.</td>
+                    <td>Para verificar si la IA realmente aprendió o solo memorizó.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Optimización</strong></td>
+                    <td>Ajustar el tiempo de estudio.</td>
+                    <td>Modificar la Tasa de Aprendizaje.</td>
+                    <td>Cuando el error es muy alto y necesitamos que la IA mejore.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Workshop -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-hammer"></i> Taller: "Entrenando mi Primer Clasificador"</h4>
+            <p>Diseñarás la lógica para un modelo que diferencie <strong>"Correos Deseados"</strong> de <strong>"Correos Basura (Spam)"</strong>.</p>
+
+            <div class="phase-card">
+              <div class="phase-card__header phase-card__header--1">
+                <span class="phase-card__num">Fase 1</span>
+                <h5>Preparación del Dataset</h5>
+              </div>
+              <div class="phase-card__body">
+                <ul class="reflection-list">
+                  <li><i class="ph-bold ph-database"></i> <strong>Recolección:</strong> Imagina que tienes 1,000 correos. ¿Cuántos usarás para Entrenamiento y cuántos para Prueba?</li>
+                  <li><i class="ph-bold ph-tag"></i> <strong>Etiquetado:</strong> ¿Qué palabras clave crees que el algoritmo debería identificar como "Atributos" de un correo Spam? (Ej: "Ganaste", "Premio", "Dinero").</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="phase-card">
+              <div class="phase-card__header phase-card__header--2">
+                <span class="phase-card__num">Fase 2</span>
+                <h5>Configuración del Cerebro</h5>
+              </div>
+              <div class="phase-card__body">
+                <ul class="reflection-list">
+                  <li><i class="ph-bold ph-repeat"></i> <strong>Épocas:</strong> Si tu modelo tiene un error muy alto en la práctica, ¿deberías aumentar o disminuir el número de veces que repasa los datos?</li>
+                  <li><i class="ph-bold ph-speedometer"></i> <strong>Tasa de Aprendizaje:</strong> Si la IA está tomando decisiones muy "alocadas" y no se estabiliza, ¿qué ajuste le harías al acelerador (Learning Rate)?</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="phase-card">
+              <div class="phase-card__header phase-card__header--3">
+                <span class="phase-card__num">Fase 3</span>
+                <h5>Reto de Innovación — Fake News</h5>
+              </div>
+              <div class="phase-card__body">
+                <div class="reflection-box">
+                  <i class="ph-bold ph-newspaper"></i>
+                  <p><strong>Situación:</strong> Tu modelo de detección de Spam ahora debe funcionar para detectar noticias falsas (<em>Fake News</em>) sobre salud. ¿Qué cambio técnico harías en tu entrenamiento para que la IA sea más "estricta" y no deje pasar información peligrosa? Escribe tu propuesta.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="phase-card">
+              <div class="phase-card__header" style="background:linear-gradient(135deg,#7c3aed,#a855f7);">
+                <span class="phase-card__num">Situación</span>
+                <h5>IA para la Convivencia Escolar</h5>
+              </div>
+              <div class="phase-card__body">
+                <p>La tendencia en tecnología es usar IA para detectar el <strong>Ciberbullying</strong> en redes sociales antes de que cause daño. Si tuvieras que entrenar un modelo para analizar mensajes del chat del colegio, responde:</p>
+                <ul class="reflection-list">
+                  <li><i class="ph-bold ph-pencil-line"></i> ¿Qué datos de entrenamiento propondrías? ¿Qué tipo de frases debería "leer" la IA para diferenciar un chiste de un insulto?</li>
+                  <li><i class="ph-bold ph-pencil-line"></i> ¿Cómo usarías las Métricas de Evaluación (Precisión y Sensibilidad)? ¿Qué es más grave: que la IA ignore un insulto real o que bloquee un mensaje amistoso por error?</li>
+                  <li><i class="ph-bold ph-pencil-line"></i> Explica de qué manera este modelo mejora la seguridad de los estudiantes.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reflection -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-brain"></i> Reflexión Crítica</h4>
+            <ul class="reflection-list">
+              <li><i class="ph-bold ph-pencil-line"></i> ¿Por qué es peligroso que una IA se entrene solo con un tipo de datos (por ejemplo, solo con fotos de personas de un solo país)?</li>
+              <li><i class="ph-bold ph-pencil-line"></i> ¿Qué fue lo más "mágico" o sorprendente de entender que una máquina no nace inteligente, sino que nosotros la "educamos" con datos?</li>
+              <li><i class="ph-bold ph-pencil-line"></i> ¿Lograste diferenciar por qué la IA a veces "memoriza" en lugar de "aprender"? (SÍ / NO)</li>
+            </ul>
+          </div>
+
+          <!-- Complete button -->
+          <button class="btn btn--success btn--large btn--block" style="margin-top:var(--space-xl)"
+            data-complete-btn="s3">
+            <i class="ph-bold ph-check-circle"></i> Marcar sesión como completada
+          </button>
+        </div>
+
+        <!-- Resources Panel -->
+        <div class="resources-panel">
+          <h4 style="margin-bottom:var(--space-sm)"><i class="ph-bold ph-folder-open"></i> Recursos</h4>
+          <div class="resource-card">
+            <div class="resource-card__icon resource-card__icon--pdf"><i class="ph-bold ph-file-pdf"></i></div>
+            <h5>Guía 3 — Entrenamiento de Modelos</h5>
+            <p>Dataset, algoritmos, métricas de evaluación, sobreajuste y taller completo.</p>
+            <a href="https://tair.xn--codisea-9za.com/wp-content/uploads/2026/05/Guia-3.pdf" target="_blank" class="btn btn--secondary"><i class="ph-bold ph-download-simple"></i> Descargar PDF</a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-card__icon resource-card__icon--link"><i class="ph-bold ph-link"></i></div>
+            <h5>Teachable Machine</h5>
+            <p>Herramienta de Google para entrenar modelos de IA sin código.</p>
+            <a href="https://teachablemachine.withgoogle.com/" target="_blank" class="btn btn--secondary"><i
+                class="ph-bold ph-arrow-square-out"></i> Abrir Herramienta</a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-card__icon resource-card__icon--link"><i class="ph-bold ph-link"></i></div>
+            <h5>Google Colab</h5>
+            <p>Entrenamiento en la nube, ideal para modelos grandes con datos privados.</p>
+            <a href="https://colab.research.google.com/" target="_blank" class="btn btn--secondary"><i
+                class="ph-bold ph-arrow-square-out"></i> Abrir Colab</a>
+          </div>
+          <!-- Key concepts summary -->
+          <div class="sidebar-info">
+            <h6><i class="ph-bold ph-lightning"></i> Contenidos Clave</h6>
+            <ul>
+              <li>Algoritmos de entrenamiento</li>
+              <li>División de datasets (80/20)</li>
+              <li>Métricas: Precisión y Sensibilidad</li>
+              <li>Sobreajuste vs. Subajuste</li>
+              <li>Optimización de parámetros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026— Plataforma de Aula Invertida · Grado 11 · Colombia 🇨🇴</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/components.js"></script>
+</body>
+
+</html>

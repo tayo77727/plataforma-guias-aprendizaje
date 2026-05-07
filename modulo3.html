@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 3: De la Idea a la Realidad</title>
+  <meta name="description" content="Módulo 3: Integra motores, ensambla tu proyecto final y preséntalo en el debate de cierre.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+  <nav class="navbar"><div class="container">
+    <a href="index.html" class="navbar__logo">⚡ Plataforma</a>
+    <div class="navbar__links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="modulo1.html">Módulo 1</a>
+      <a href="modulo2.html">Módulo 2</a>
+      <a href="modulo3.html">Módulo 3</a>
+    </div>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Menú"><span></span><span></span><span></span></button>
+  </div></nav>
+
+  <main class="container">
+    <div class="page-header">
+      <div class="page-header__breadcrumb">
+        <a href="index.html"><i class="ph-bold ph-house"></i></a>
+        <i class="ph-bold ph-caret-right"></i>
+        <span>Módulo 3</span>
+      </div>
+      <h1><i class="ph-bold ph-rocket" style="color:var(--color-accent-orange)"></i> De la Idea a la Realidad</h1>
+      <p>Ensambla tu proyecto final con motores y Micro:bit, y prepárate para el debate de cierre.</p>
+      <div style="max-width:400px;margin-top:var(--space-lg)">
+        <div class="module-card__progress-label"><span>Progreso del Módulo</span><span id="mod3ProgressText">0%</span></div>
+        <div class="progress-bar"><div class="progress-bar__fill" id="mod3ProgressFill" style="width:0%"></div></div>
+      </div>
+    </div>
+
+    <div class="session-tabs">
+      <button class="session-tab active" data-tab="panel-s4"><i class="ph-bold ph-number-circle-four"></i> Sesión 4</button>
+      <button class="session-tab" data-tab="panel-s5"><i class="ph-bold ph-number-circle-five"></i> Sesión 5</button>
+    </div>
+
+    <!-- SESSION 4 -->
+    <div class="session-panel active" id="panel-s4">
+      <h3 style="margin-bottom:var(--space-lg)">Sesión 4: Motores e Integración Final</h3>
+      <div class="session-layout__grid">
+        <div>
+          <div class="video-area">
+            <div class="video-area__placeholder">
+              <i class="ph-bold ph-video"></i>
+              <p>Video práctico · Motores y ensamble</p>
+              <p style="font-size:var(--fs-xs);margin-top:var(--space-sm)">Próximamente: Embed de YouTube/Vimeo</p>
+            </div>
+          </div>
+          <button class="btn btn--success btn--large btn--block" style="margin-top:var(--space-xl)" data-complete-btn="s4">
+            <i class="ph-bold ph-check-circle"></i> Marcar sesión como completada
+          </button>
+        </div>
+        <div class="resources-panel">
+          <h4 style="margin-bottom:var(--space-sm)"><i class="ph-bold ph-folder-open"></i> Recursos</h4>
+          <div class="resource-card">
+            <div class="resource-card__icon resource-card__icon--pdf"><i class="ph-bold ph-file-pdf"></i></div>
+            <h5>Guía de Ensamble</h5>
+            <p>Instrucciones para integrar motores con Micro:bit</p>
+            <a href="#" class="btn btn--secondary"><i class="ph-bold ph-download-simple"></i> Descargar PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SESSION 5 -->
+    <div class="session-panel" id="panel-s5">
+      <h3 style="margin-bottom:var(--space-lg)">Sesión 5: Presentación y Debate</h3>
+      <div class="session-layout__grid">
+        <div>
+          <div class="video-area" style="aspect-ratio:auto;min-height:300px;padding:var(--space-2xl);flex-direction:column;gap:var(--space-lg)">
+            <i class="ph-bold ph-chats-circle" style="font-size:4rem;color:var(--color-accent-orange)"></i>
+            <div style="text-align:center">
+              <h4 style="margin-bottom:var(--space-sm);color:var(--color-text-primary)">Espacio de Socialización</h4>
+              <p style="max-width:400px;margin:0 auto">Prepara tu presentación, comparte tu proyecto con el grupo y participa en el debate final sobre el impacto social de tu solución tecnológica.</p>
+            </div>
+          </div>
+          <button class="btn btn--success btn--large btn--block" style="margin-top:var(--space-xl)" data-complete-btn="s5">
+            <i class="ph-bold ph-check-circle"></i> Marcar sesión como completada
+          </button>
+        </div>
+        <div class="resources-panel">
+          <h4 style="margin-bottom:var(--space-sm)"><i class="ph-bold ph-folder-open"></i> Recursos</h4>
+          <div class="resource-card">
+            <div class="resource-card__icon resource-card__icon--pdf"><i class="ph-bold ph-file-pdf"></i></div>
+            <h5>Guía de Socialización</h5>
+            <p>Estructura tu presentación y prepara el debate</p>
+            <a href="#" class="btn btn--secondary"><i class="ph-bold ph-download-simple"></i> Descargar PDF</a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-card__icon resource-card__icon--link"><i class="ph-bold ph-upload-simple"></i></div>
+            <h5>Subir Proyecto Final</h5>
+            <p>Comparte el código y documentación de tu proyecto</p>
+            <a href="#" class="btn btn--secondary"><i class="ph-bold ph-arrow-square-out"></i> Subir Archivos</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">
+    <p>© 2026 — Plataforma de Aula Invertida · Grado 11 · Colombia 🇨🇴</p>
+  </div></footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/components.js"></script>
+</body>
+</html>

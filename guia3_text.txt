@@ -1,0 +1,292 @@
+   
+ 
+    
+ 
+GUIA SESIÓN 3: ENTRENAMIENTO DE MODELOS  
+  
+  
+  
+ MERKY ARIZA - 2025164003  
+LUIZ ALMANZA ARITAMA  – 2025164254  
+LEINER ALVAREZ - 2015164005  
+TAHIR DELGAHAN ARITAMA – 2025164001  
+DANIEL OLIVEROS BENJUMEA - 2025164023   
+  
+  
+  
+MATILDE BOLAÑO GARCIA  
+DOCENTE  
+   
+  
+  
+UNIVERSIDAD DEL MAGDALENA  
+FACULTAD DE EDUCACIÓN  
+PROGRAMA LICENCIATURA EN TECNOLOGÍA  
+SANTA MARTA  
+05 / 05 / 2025  
+ 
+  
+   
+ 
+   INSTITUCION EDUCATIVA PEPITO PEREZ  
+ÁREA:  Educación en tecnología     ASIGNATURA: Tecnología  
+Profesores: Merky Ariza, Tahir Delgahan, Leiner Álvarez , Daniel Olivero , Luis Almanza  
+Estudiante: ________________ ___________    Grado: 11.º  
+Unidad: MICROBIT e IA  
+Eje temático: Entrenamiento de Modelos de Inteligencia Artificial.  
+Contenidos: Algoritmos de entrenamiento, división de datasets 
+(Entrenamiento /Test eo), métricas de evaluación (Precisión, Sensibilidad ), Sobreajuste 
+vs. Subajuste y optimización.  
+Tiempo: Una semana.  
+Descripción: Al finalizar esta guía, el estudiante será capaz de comprender y ejecutar el 
+proceso técnico mediante el cual una máquina "aprende", diferenciando claramente 
+entre el estudio por patrones y la simple memorización de datos. Comprenderá la 
+importancia vital de la división de datasets (entrenamiento y prueba) y aplicará métricas 
+de evaluación como precisión y sensibilidad para medir la efectividad de una 
+Inteligencia Artificial. Asimismo, desarrollará la habilidad de identificar y corregir errores  
+comunes de ajuste, como el sobreajuste (overfitting), logrando optimizar sus propios 
+modelos para que funcionen con éxito en situaciones reales, todo bajo un marco de 
+pensamiento crítico sobre la ética y los sesgos en la tecnología.  
+Propósito de formación del área  
+Formar un estudiante capaz de resolver problemas complejos mediante el uso de 
+tecnologías de Inteligencia Artificial y Modelado de Datos, aplicando el pensamiento 
+computacional para analizar patrones y proponer soluciones automatizadas que 
+impacten positiv amente su entorno humano y social.  
+Objetivo  
+Comprender, aplicar y proponer procesos de entrenamiento de modelos de Machine 
+Learning, tomando como base un conjunto de datos (dataset) al cual aplicar algoritmos, 
+métricas de evaluación y técnicas de optimización para garantizar predicciones precisas 
+y éticas.  
+Desempeños  
+• Comprende la lógica de los algoritmos de entrenamiento y la importancia de la 
+división de datos ( Entrenamiento/Testeo)  para interpretar cómo una máquina 
+transforma información en conocimiento.     
+ 
+   • Aplica procesos de entrenamiento a un modelo de Machine Learning utilizando 
+herramientas de experimentación, validando su rendimiento a través de métricas 
+como precisión y sensibilidad (recall).  
+• Compara el comportamiento de un modelo frente a datos nuevos, identificando 
+si existe un aprendizaje real o un error de memorización ( Sobreajuste vs. 
+Subajuste ). 
+• Propone y diseña ajustes en los parámetros de entrenamiento o en la calidad de 
+los datos para optimizar la respuesta del modelo ante necesidades específicas 
+del usuario.  
+• Argumenta con sentido crítico el impacto de los sesgos en el entrenamiento de 
+modelos, valorando la importancia de la transparencia algorítmica para evitar 
+decisiones injustas en la sociedad.  
+Pregunta esencial  
+Si el entrenamiento de modelos de Machine Learning  permite que la tecnología 
+“aprenda” a identificar patrones complejos y tome decisiones autónomas basadas en la 
+experiencia (datos). ¿Qué ventajas o desventajas traería para el desarrollo humano y 
+científico el que nunca se hubiera descubierto la forma de entrenar algoritmos, 
+obligándonos a seguir dependiendo únicamente de la programación tradicional basada 
+en reglas fijas y manuales?  
+Contenido  
+El Corazón de la Inteligencia Artificial: El Entrenamiento  
+¿Sabías que Netflix te recomendaría series que odias o un carro autónomo no sabría 
+qué es un semáforo si no hubieran pasado por un proceso de entrenamiento ? 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+    
+ 
+ 
+¿Por qué una IA sin entrenar es como un recién nacido?  
+Seguramente, al investigar sobre algoritmos, notaste que por sí solos son solo 
+matemáticas vacías. Sin datos y sin entrenamiento, una IA es como un estudiante el 
+primer día de clase: tiene el potencial de aprender, pero no sabe nada del mundo.  
+Si el algoritmo es el cerebro de un atleta, el entrenamiento es el plan de ejercicios y la 
+dieta que sigue para ganar una medalla. Sin entrenamiento, el cerebro (algoritmo) no 
+sabe cómo reaccionar ante la competencia (los datos reales). El entrenamiento 
+transforma "fó rmulas" en "decisiones inteligentes".  
+Las reglas del juego:  
+Para que un modelo aprenda correctamente, seguimos una estructura lógica. No es solo 
+"lanzar datos", es seguir estas reglas:  
+El Dataset (Los Apuntes):  Es la información histórica. Se divide en entrenamiento (para 
+estudiar) y Test eo(para el examen final).  
+El Algoritmo (La Estrategia):  Es el método que usa la IA para encontrar patrones 
+(¿buscamos tendencias o clasificamos imágenes?).  
+La Evaluación (La Nota):  Usamos métricas como la Precisión  para saber si la IA está 
+aprendiendo o solo memorizando.  
+La Optimización (El Ajuste):  Es el proceso de corregir los errores. Si la IA falla, 
+"ajustamos las tuercas" de la fórmula matemática para que falle menos la próxima vez.  
+Ejemplo de lógica:  Si Modelo identifica Perro -> Y es realmente un Gato 
+-> Error aumenta -> Optimizar parámetros.  Traducción:  "Si la IA se equivoca, 
+el sistema calcula qué tan lejos estuvo de la verdad y ajusta sus reglas internas para no 
+repetir el error".  
+Esto quiere decir: Si la IA se equivoca, el sistema calcula qué tan lejos estuvo de la 
+verdad y ajusta sus reglas internas para no repetir el error  
+ 
+ 
+    
+ 
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Redacta tu propio con cepto  de  Observa la imagen y responde: ¿ Cuáles  son 
+Entrenamiento:       los elementos del Dataset ?   
+__________________________________      _________________________________________  
+____ ______________________________      _________________________________________  
+   
+ 
+    
+Componentes Clave que transforman tu Modelo:  Para que tu Inteligencia Artificial 
+pase de ser un programa básico a una herramienta poderosa, ajustamos sus 
+"parámetros" (configuraciones internas). Estos son los más importantes:  
+• Tasa de Aprendizaje (Learning Rate):  Define qué tan rápido aprende la IA. Si es 
+muy alta, la IA "salta" las conclusiones y se equivoca; si es muy baja, tardará 
+siglos en aprender. Es como el acelerador de un carro.  
+• Número de Épocas (Epochs):  Es la cantidad de veces que la IA lee el conjunto 
+de datos completo. Una época es una "vuelta completa" a los apuntes. Muchas 
+épocas pueden causar Sobreajuste , pocas pueden causar Subajuste . 
+• Capacidad del Modelo:  Define qué tan complejo es el cerebro de la IA. Un 
+modelo con mucha capacidad puede resolver problemas difíciles (como 
+reconocer rostros), pero si el problema es simple, terminará memorizando en 
+lugar de aprender.  
+• Función de Pérdida (Loss Function):  Es el "termómetro" del error. Le dice a la 
+máquina qué tan lejos está de la respuesta correcta. Entre más pequeña sea la 
+pérdida, mejor es el modelo.  
+ 
+Formas de entrenar y conectar tu Modelo:  Dependiendo de dónde y cómo quieras que 
+aprenda tu IA, existen dos caminos principales:  
+• Entrenamiento Local (En tu propia PC):  Usas la potencia de tu computador 
+para procesar los datos. Es ideal para experimentos pequeños o cuando tus 
+datos son privados.  
+• Entrenamiento en la Nube (El recomendado):  Conectas tu modelo a 
+servidores potentes (como Google Colab o Azure). ¡Esto permite entrenar 
+modelos gigantescos con millones de datos sin que tu computadora se 
+trabe o se sobrecaliente!  Además, permite que otros colaboradores accedan 
+al mismo modelo de forma remota.  
+ 
+Momento de Reflexión  
+No sigas avanzando sin antes asegurar que comprendes las bases. Responde en tu guía:  
+Análisis visual:  Si un modelo presenta Sobreajuste (Overfitting) , ¿cómo se comportará 
+su gráfica de error cuando le mostremos el examen final (datos de prueba) comparado 
+con sus apuntes de práctica?     
+ 
+   _________________________________________________________________________________  
+_________________________________________________________________________________  
+ 
+Deducción lógica:  Si quieres evaluar qué tan buena es la IA encontrando todos los 
+casos reales de una enfermedad para no ignorar a ningún paciente, completa la métrica 
+que debes usar:  
+Necesito medir la Sensibilidad , porque esta responde a: De todos los casos ________ 
+que existían, ¿cuántos fue capaz de ________ la IA? . 
+Diferenciación:  ¿En qué se diferencia el Conjunto de Entrenamiento  del Conjunto de 
+Prueba  según lo que viste en la introducción?  
+El de Entrenamiento se usa para: _____________________________________________  
+El de Prueba se usa para: __________________________________________________  
+El Mapa de Conceptos  
+Para dominar el entrenamiento de una IA, recuerda esta tabla comparativa de las etapas 
+que siempre usarás:  
+Etapa del 
+Proceso  Ejemplo 
+Práctico  Uso en el 
+Modelo  ¿Cuándo usarlo?  
+Entrenamiento  Estudiar 100 
+fotos de 
+gatos.  Usar el 80% del 
+Dataset.  Para que la IA busque patrones y 
+aprenda reglas.  
+Prueba 
+(Testeo)  Examen con 
+20 fotos 
+nuevas.  Usar el 20% del 
+Dataset.  Para verificar si la IA realmente 
+aprendió o solo memorizó.  
+Optimización  Ajustar el 
+tiempo de 
+estudio.  Modificar la Tasa 
+de Aprendizaje.  Cuando el error es muy alto y 
+necesitamos que la IA mejore.  
+    
+ 
+   Idea Final:  Todo en el Machine Learning  es un proceso de "ensayo y error". Con el 
+entrenamiento, tú decides qué tan inteligente será la máquina, cuántas veces repasará 
+los datos y cómo mediremos sus éxitos.  
+Situación de Análisis: IA para la Convivencia Escolar  
+Actualmente, la tendencia en tecnología es usar IA para detectar el Ciberbullying  
+(acoso escolar) en redes sociales antes de que cause daño. Si tuvieras que entrenar un 
+modelo para analizar los mensajes del chat del colegio:  
+1. ¿Qué datos de entrenamiento propondrías?  ¿Qué tipo de frases debería "leer" la IA 
+para aprender a diferenciar un chiste de un insulto?  
+_________________________________________________________________________________  
+_________________________________________________________________________________  
+2. ¿Cómo usarías las Métricas de Evaluación (Precisión y Sensibilidad)?  ¿Qué es más 
+grave: que la IA ignore un insulto real o que bloquee un mensaje amistoso por error?  
+_________________________________________________________________________________  
+_________________________________________________________________________________  
+3. Explica de qué manera este modelo mejora la seguridad de los estudiantes.  
+_________________________________________________________________________________  
+_________________________________________________________________________________  
+Taller de Aplicación: "Entrenando mi primer Clasificador"  
+Instrucciones:  En este taller diseñarás la lógica para un modelo que diferencie "Correos 
+Deseados" de "Correos Basura (Spam)".  
+Fase 1: Preparación del Dataset  
+• Recolección:  Imagina que tienes 1,000 correos. ¿Cuántos usarás para 
+Entrenamiento  y cuántos para el Examen (Prueba) ? 
+• Etiquetado:  ¿Qué palabras clave crees que el algoritmo debería identificar como 
+"Atributos" de un correo Spam? (Ej: "Ganaste", "Premio", "Dinero").  
+Fase 2: Configuración del Cerebro  
+• Épocas:  Si tu modelo tiene un error muy alto en la práctica, ¿deberías aumentar 
+o disminuir el número de veces que repasa los datos?  
+• Tasa de Aprendizaje:  Si la IA está tomando decisiones muy "alocadas" y no se 
+estabiliza, ¿qué ajuste le harías al acelerador (Learning Rate)?     
+ 
+   Fase 3: El Reto de Innovación   
+• Situación:  Tu modelo de detección de Spam ahora debe funcionar para detectar 
+noticias falsas ( Fake News ) sobre salud. ¿Qué cambio técnico harías en tu 
+entrenamiento para que la IA sea más "estricta" y no deje pasar información 
+peligrosa? Escribe tu propuesta en tres líneas.  
+Fase 4: Reflexión Crítica  
+Responde brevemente:  
+¿Por qué crees que hoy en día es peligroso que una IA se entrene solo con un tipo de 
+datos (por ejemplo, solo con fotos de personas de un solo país)?  
+_________________________________________________________________________________
+_________________________________________________________________________________  
+¿Qué fue lo más "mágico" o sorprendente de entender que una máquina no nace 
+inteligente, sino que nosotros la "educamos" con datos?  
+_________________________________________________________________________________
+_________________________________________________________________________________  
+Experiencia  Metacognitiva  
+Antes de entregar, califica tu propio proceso:  
+¿Cuál fue el concepto (Entrenamiento, Prueba, Sobreajuste, etc.) que más se te facilitó 
+entender?  
+_________________________________________________________________________________
+_________________________________________________________________________________
+_________________________________________________________________________________
+_________________________________________________________________________________  
+ 
+¿Cuál fue la actividad que más se te dificultó y por qué?  
+_________________________________________________________________________________
+_________________________________________________________________________________  
+_________________________________________________________________________________
+_________________________________________________________________________________  
+ 
+¿Logré diferenciar por qué la IA a veces "memoriza" en lugar de "aprender"?  (SÍ / NO)  
+______  
+    
+ 
+   ¿Qué ajuste (parámetro) fue el más difícil de imaginar cómo funcionaba?  
+_________________________________________________________________________________
+_________________________________________________________________________________  
+ 
+ 

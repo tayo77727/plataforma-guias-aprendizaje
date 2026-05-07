@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Módulo 1: Dominando la Micro:bit</title>
+  <meta name="description"
+    content="Módulo 1: Aprende MicroPython y sensores con la Micro:bit. Videos y guías descargables.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="navbar__logo">⚡ Plataforma</a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html">Inicio</a>
+        <a href="modulo1.html">Módulo 1</a>
+        <a href="modulo2.html">Módulo 2</a>
+        <a href="modulo3.html">Módulo 3</a>
+      </div>
+      <button class="navbar__hamburger" id="hamburger"
+        aria-label="Menú"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <!-- Breadcrumb & Header -->
+    <div class="page-header">
+      <div class="page-header__breadcrumb">
+        <a href="index.html"><i class="ph-bold ph-house"></i></a>
+        <i class="ph-bold ph-caret-right"></i>
+        <span>Módulo 1</span>
+      </div>
+      <h1><i class="ph-bold ph-cpu" style="color:var(--color-primary-light)"></i> Dominando la Micro:bit</h1>
+      <p>Aprende los fundamentos de MicroPython y utiliza sensores para resolver problemas de tu contexto.</p>
+      <!-- Module progress -->
+      <div style="max-width:400px;margin-top:var(--space-lg)">
+        <div class="module-card__progress-label"><span>Progreso del Módulo</span><span id="mod1ProgressText">0%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-bar__fill" id="mod1ProgressFill" style="width:0%"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Session Tabs -->
+    <div class="session-tabs">
+      <button class="session-tab active" data-tab="panel-s1"><i class="ph-bold ph-number-circle-one"></i> Sesión
+        1</button>
+      <button class="session-tab" data-tab="panel-s2"><i class="ph-bold ph-number-circle-two"></i> Sesión 2</button>
+    </div>
+
+    <!-- SESSION 1 PANEL -->
+    <div class="session-panel active" id="panel-s1">
+      <h3 style="margin-bottom:var(--space-lg)">Sesión 1: De los Bloques al Código — Intro a MicroPython</h3>
+
+      <!-- Guide Info Banner -->
+      <div class="guide-banner">
+        <div class="guide-banner__meta">
+          <span><i class="ph-bold ph-calendar-blank"></i> Tiempo: 1 semana</span>
+          <span><i class="ph-bold ph-graduation-cap"></i> Grado 11.º · Tecnología</span>
+          <span><i class="ph-bold ph-map-pin"></i> I.E. Pepito Pérez · Santa Marta</span>
+        </div>
+        <p class="guide-banner__desc">Al finalizar esta guía, serás capaz de <strong>traducir la lógica visual de bloques a instrucciones reales en MicroPython</strong>. Comprenderás cómo "hablarle" a la Micro:bit mediante texto para crear mensajes dinámicos y animaciones, logrando que una simple tarjeta se convierta en una herramienta de comunicación para tu comunidad.</p>
+      </div>
+
+      <div class="session-layout__grid">
+        <div>
+          <!-- Video -->
+          <div class="video-area">
+            <div class="video-area__placeholder">
+              <i class="ph-bold ph-video"></i>
+              <p>Video explicativo · MicroPython Básico</p>
+              <p style="font-size:var(--fs-xs);margin-top:var(--space-sm)">Próximamente: Embed de YouTube/Vimeo</p>
+            </div>
+          </div>
+
+          <!-- Objective -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-target"></i> Objetivo</h4>
+            <p>Capacitar al estudiante en la transición de la programación visual por bloques al lenguaje textual MicroPython, permitiéndole comprender la <strong>sintaxis básica</strong> y la lógica de control necesaria para interactuar con el hardware de la Micro:bit de manera autónoma.</p>
+          </div>
+
+          <!-- Essential Question -->
+          <div class="content-section content-section--highlight">
+            <h4><i class="ph-bold ph-question"></i> Pregunta Esencial</h4>
+            <p><em>Si los bloques son las piezas de construcción, el código es la materia prima: ¿De qué manera el paso de una programación visual a una textual amplía las posibilidades de crear soluciones tecnológicas más precisas y personalizadas para las necesidades de nuestra comunidad?</em></p>
+          </div>
+
+          <!-- Learning Outcomes -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-list-checks"></i> Desempeños</h4>
+            <ul class="learning-list">
+              <li><i class="ph-bold ph-check-circle"></i> Traduce la lógica de programación visual (bloques) a la sintaxis textual de MicroPython.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Construye programas básicos usando <code>display</code> y <code>sleep</code> para interactuar con el hardware.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Analiza la eficiencia del código frente a los bloques, identificando las ventajas de Python.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Propone soluciones tecnológicas usando la pantalla LED de la Micro:bit para comunicar ideas sociales.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Evalúa su propio proceso de aprendizaje identificando errores y proponiendo correcciones.</li>
+            </ul>
+          </div>
+
+          <!-- Key Concepts -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-book-open"></i> Contenido: Las Reglas del Juego (Sintaxis Básica)</h4>
+            <p>Para que la Micro:bit no se confunda, debemos seguir una estructura clara. Observa este ejemplo de un <em>"Hola Mundo"</em> técnico:</p>
+            <div class="code-block">
+              <div class="code-block__header">
+                <span><i class="ph-bold ph-code"></i> MicroPython — Hola Mundo</span>
+                <span class="code-block__badge">python.microbit.org</span>
+              </div>
+              <pre><code><span class="code-kw">from</span> microbit <span class="code-kw">import</span> *     <span class="code-comment"># 1. Importar la librería</span>
+
+<span class="code-kw">while</span> True:                   <span class="code-comment"># 2. Bucle infinito</span>
+    display.scroll(<span class="code-str">"Hola!"</span>)  <span class="code-comment"># 3. Mostrar mensaje</span>
+    sleep(<span class="code-num">1000</span>)               <span class="code-comment"># 4. Esperar 1 segundo</span></code></pre>
+            </div>
+            <div class="concepts-grid">
+              <div class="concept-card">
+                <span class="concept-card__num">1</span>
+                <h6>Importar librería</h6>
+                <p><code>from microbit import *</code> — carga todas las funciones de la Micro:bit.</p>
+              </div>
+              <div class="concept-card">
+                <span class="concept-card__num">2</span>
+                <h6>Bucle infinito</h6>
+                <p><code>while True:</code> — el código se repite para siempre (como el latido del corazón).</p>
+              </div>
+              <div class="concept-card">
+                <span class="concept-card__num">3</span>
+                <h6>Salida en pantalla</h6>
+                <p><code>display.scroll()</code> desplaza texto. <code>display.show()</code> muestra un ícono o imagen.</p>
+              </div>
+              <div class="concept-card">
+                <span class="concept-card__num">4</span>
+                <h6>Pausa</h6>
+                <p><code>sleep(ms)</code> — pausa el programa en milisegundos. <code>sleep(1000)</code> = 1 segundo.</p>
+              </div>
+            </div>
+            <div class="alert-box alert-box--warning">
+              <i class="ph-bold ph-warning"></i>
+              <p>¿Qué pasa si escribes <code>Display.Scroll</code> con mayúsculas? ¡La Micro:bit no lo entendería! La precisión en el texto es más importante que en los bloques. Python distingue MAYÚSCULAS de minúsculas.</p>
+            </div>
+          </div>
+
+          <!-- Workshop -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-hammer"></i> Taller de Aplicación: "Hackeando la Comunicación"</h4>
+            <p>Abre el editor en <strong>python.microbit.org</strong> y completa las siguientes fases:</p>
+
+            <div class="phase-card">
+              <div class="phase-card__header phase-card__header--1">
+                <span class="phase-card__num">Fase 1</span>
+                <h5>El Traductor Humano</h5>
+              </div>
+              <div class="phase-card__body">
+                <p>Escribe un código que simule un <strong>"Latido de Corazón"</strong>.</p>
+                <div class="code-block" style="margin-top:12px;">
+                  <div class="code-block__header">
+                    <span><i class="ph-bold ph-heart"></i> Código del Latido</span>
+                  </div>
+                  <pre><code><span class="code-kw">from</span> microbit <span class="code-kw">import</span> *
+<span class="code-kw">while</span> True:
+    display.show(Image.HEART)
+    sleep(<span class="code-num">500</span>)
+    display.show(Image.HEART_SMALL)
+    sleep(<span class="code-num">500</span>)</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <div class="phase-card">
+              <div class="phase-card__header phase-card__header--2">
+                <span class="phase-card__num">Fase 2</span>
+                <h5>Reto de Innovación Social</h5>
+              </div>
+              <div class="phase-card__body">
+                <p><strong>Situación:</strong> En Santa Marta, hay muchos turistas que no hablan español. Diseña un <em>"Traductor de Bolsillo"</em> con tu Micro:bit que alterne entre un ícono (ej. una flecha) y la palabra <strong>"BAÑO"</strong> o <strong>"EXIT"</strong>.</p>
+                <div class="reflection-box">
+                  <i class="ph-bold ph-chat-circle-dots"></i>
+                  <p>¿Cómo ayudaría esto a la inclusión en tu ciudad?</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="phase-card">
+              <div class="phase-card__header phase-card__header--3">
+                <span class="phase-card__num">Fase 4</span>
+                <h5>Reflexión Crítica</h5>
+              </div>
+              <div class="phase-card__body">
+                <p>Responde brevemente en tu cuaderno o en la guía impresa:</p>
+                <ul class="reflection-list">
+                  <li><i class="ph-bold ph-pencil-line"></i> ¿Por qué crees que se debe aprender MicroPython en vez de seguir programando en bloques?</li>
+                  <li><i class="ph-bold ph-pencil-line"></i> ¿Qué sentiste al escribir tu primera línea de código sin usar bloques?</li>
+                  <li><i class="ph-bold ph-pencil-line"></i> ¿Qué errores cometiste y cómo los solucionaste?</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rubric -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-chart-bar"></i> Rúbrica de Evaluación</h4>
+            <div class="rubric-table-wrap">
+              <table class="rubric-table">
+                <thead>
+                  <tr>
+                    <th>Criterio</th>
+                    <th class="rubric-table__superior">Superior (4.6–5.0)</th>
+                    <th class="rubric-table__alto">Alto (4.0–4.5)</th>
+                    <th class="rubric-table__basico">Básico (3.0–3.9)</th>
+                    <th class="rubric-table__bajo">Bajo (1.0–2.9)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Traducción</strong></td>
+                    <td>Traduce bloques a código sin errores de lógica.</td>
+                    <td>Traduce casi todos los bloques con pocos errores.</td>
+                    <td>Traduce algunos bloques pero presenta errores de lógica.</td>
+                    <td>Tiene dificultad para traducir bloques a código.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Sintaxis</strong></td>
+                    <td>Usa correctamente comandos, paréntesis y dos puntos.</td>
+                    <td>Presenta pocos errores de sintaxis.</td>
+                    <td>Presenta varios errores de sintaxis que debe corregir.</td>
+                    <td>Los errores impiden ejecutar el código.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Pensamiento Crítico</strong></td>
+                    <td>Analiza el código, detecta errores y propone mejoras.</td>
+                    <td>Detecta algunos errores y plantea soluciones.</td>
+                    <td>Reconoce errores con ayuda del docente.</td>
+                    <td>Tiene dificultad para analizar y corregir el código.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Complete button -->
+          <button class="btn btn--success btn--large btn--block" style="margin-top:var(--space-xl)"
+            data-complete-btn="s1">
+            <i class="ph-bold ph-check-circle"></i> Marcar sesión como completada
+          </button>
+        </div>
+
+        <!-- Resources Panel -->
+        <div class="resources-panel">
+          <h4 style="margin-bottom:var(--space-sm)"><i class="ph-bold ph-folder-open"></i> Recursos</h4>
+          <div class="resource-card">
+            <div class="resource-card__icon resource-card__icon--pdf"><i class="ph-bold ph-file-pdf"></i></div>
+            <h5>Guía 1 — De los Bloques al Código</h5>
+            <p>Fundamentos de MicroPython, sintaxis básica, taller y rúbrica.</p>
+            <a href="https://tair.xn--codisea-9za.com/wp-content/uploads/2026/05/Guia-1.pdf" target="_blank" class="btn btn--secondary"><i class="ph-bold ph-download-simple"></i> Descargar PDF</a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-card__icon resource-card__icon--link"><i class="ph-bold ph-link"></i></div>
+            <h5>Editor Online Micro:bit</h5>
+            <p>Escribe y ejecuta MicroPython directamente en el navegador.</p>
+            <a href="https://python.microbit.org/" target="_blank" class="btn btn--secondary"><i
+                class="ph-bold ph-arrow-square-out"></i> Abrir Editor</a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-card__icon resource-card__icon--link"><i class="ph-bold ph-link"></i></div>
+            <h5>Sitio oficial Micro:bit</h5>
+            <p>Documentación y tutoriales oficiales.</p>
+            <a href="https://microbit.org/" target="_blank" class="btn btn--secondary"><i
+                class="ph-bold ph-arrow-square-out"></i> Visitar Sitio</a>
+          </div>
+          <!-- Key concepts summary -->
+          <div class="sidebar-info">
+            <h6><i class="ph-bold ph-lightning"></i> Contenidos Clave</h6>
+            <ul>
+              <li>Sintaxis básica (importación de librerías)</li>
+              <li>El bucle infinito <code>while True</code></li>
+              <li>Comandos de salida (<code>display.show</code>, <code>display.scroll</code>)</li>
+              <li>Pausas con <code>sleep()</code></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SESSION 2 PANEL -->
+    <div class="session-panel" id="panel-s2">
+      <h3 style="margin-bottom:var(--space-lg)">Sesión 2: Sensores y Contexto Social</h3>
+      <div class="session-layout__grid">
+        <div>
+          <div class="video-area">
+            <div class="video-area__placeholder">
+              <i class="ph-bold ph-video"></i>
+              <p>Video interactivo · Sensores en acción</p>
+              <p style="font-size:var(--fs-xs);margin-top:var(--space-sm)">Próximamente: Embed de YouTube/Vimeo</p>
+            </div>
+          </div>
+          <button class="btn btn--success btn--large btn--block" style="margin-top:var(--space-xl)"
+            data-complete-btn="s2">
+            <i class="ph-bold ph-check-circle"></i> Marcar sesión como completada
+          </button>
+        </div>
+        <div class="resources-panel">
+          <h4 style="margin-bottom:var(--space-sm)"><i class="ph-bold ph-folder-open"></i> Recursos</h4>
+          <div class="resource-card">
+            <div class="resource-card__icon resource-card__icon--pdf"><i class="ph-bold ph-file-pdf"></i></div>
+            <h5>Guía de Ideación</h5>
+            <p>Identifica problemas sociales y propón soluciones con sensores</p>
+            <a href="#" class="btn btn--secondary"><i class="ph-bold ph-download-simple"></i> Descargar PDF</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026— Plataforma de Aula Invertida · Grado 11 · Colombia 🇨🇴</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/components.js"></script>
+</body>
+
+</html>

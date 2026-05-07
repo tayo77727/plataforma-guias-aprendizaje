@@ -1,0 +1,148 @@
+/* === LAYOUT CSS - Header, Footer, Grid === */
+
+/* --- Header / Navbar --- */
+.navbar{
+  position:sticky;top:0;z-index:var(--z-sticky);
+  background:rgba(10,14,26,.8);backdrop-filter:var(--glass-blur);
+  border-bottom:var(--border-glass);padding:var(--space-md) 0;
+}
+.navbar .container{display:flex;align-items:center;justify-content:space-between}
+.navbar__logo{
+  font-family:var(--font-heading);font-size:var(--fs-xl);font-weight:var(--fw-extrabold);
+  background:var(--gradient-primary);-webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;letter-spacing:-0.5px;
+}
+.navbar__links{display:flex;gap:var(--space-xl);align-items:center}
+.navbar__links a{
+  color:var(--color-text-secondary);font-weight:var(--fw-medium);font-size:var(--fs-sm);
+  text-transform:uppercase;letter-spacing:1px;position:relative;padding:var(--space-xs) 0;
+}
+.navbar__links a::after{
+  content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;
+  background:var(--gradient-primary);transition:width var(--transition-base);border-radius:2px;
+}
+.navbar__links a:hover,
+.navbar__links a.active{color:var(--color-text-primary)}
+.navbar__links a:hover::after,
+.navbar__links a.active::after{width:100%}
+.navbar__hamburger{
+  display:none;flex-direction:column;gap:5px;cursor:pointer;padding:var(--space-xs);
+}
+.navbar__hamburger span{
+  width:24px;height:2px;background:var(--color-text-primary);border-radius:2px;
+  transition:all var(--transition-base);
+}
+.navbar__hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.navbar__hamburger.active span:nth-child(2){opacity:0}
+.navbar__hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+
+/* Mobile Nav */
+@media(max-width:768px){
+  .navbar__hamburger{display:flex}
+  .navbar__links{
+    position:fixed;top:60px;left:0;right:0;
+    background:rgba(10,14,26,.95);backdrop-filter:var(--glass-blur-strong);
+    flex-direction:column;padding:var(--space-xl);gap:var(--space-lg);
+    transform:translateY(-120%);transition:transform var(--transition-slow);
+    border-bottom:var(--border-glass);
+  }
+  .navbar__links.open{transform:translateY(0)}
+}
+
+/* --- Hero Section --- */
+.hero{
+  padding:var(--space-4xl) 0 var(--space-3xl);text-align:center;
+  position:relative;overflow:hidden;
+}
+.hero__badge{
+  display:inline-flex;align-items:center;gap:var(--space-sm);
+  background:var(--color-bg-glass);border:var(--border-glass);
+  padding:var(--space-xs) var(--space-md);border-radius:var(--radius-full);
+  font-size:var(--fs-sm);color:var(--color-accent-cyan);margin-bottom:var(--space-lg);
+}
+.hero h1{margin-bottom:var(--space-md)}
+.hero h1 .gradient-text{
+  background:var(--gradient-primary);-webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;background-clip:text;
+}
+.hero__subtitle{
+  font-size:var(--fs-lg);max-width:600px;margin:0 auto var(--space-xl);
+}
+.hero__progress-wrap{
+  max-width:500px;margin:0 auto;
+  background:var(--color-bg-glass);border:var(--border-glass);
+  border-radius:var(--radius-lg);padding:var(--space-lg);
+}
+.hero__progress-label{
+  display:flex;justify-content:space-between;font-size:var(--fs-sm);
+  color:var(--color-text-secondary);margin-bottom:var(--space-sm);
+}
+
+/* --- Modules Grid --- */
+.modules-section{padding:var(--space-3xl) 0}
+.modules-section__header{text-align:center;margin-bottom:var(--space-2xl)}
+.modules-section__header p{max-width:550px;margin:var(--space-sm) auto 0}
+.modules-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:var(--space-xl)}
+
+/* --- Session Layout (Module Pages) --- */
+.session-layout{padding:var(--space-2xl) 0}
+.session-layout__grid{
+  display:grid;grid-template-columns:1fr 360px;gap:var(--space-xl);
+}
+@media(max-width:900px){
+  .session-layout__grid{grid-template-columns:1fr}
+}
+.video-area{
+  background:var(--color-bg-glass);border:var(--border-glass);
+  border-radius:var(--radius-lg);overflow:hidden;aspect-ratio:16/9;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;
+}
+.video-area i{font-size:3rem;color:var(--color-text-muted)}
+.video-area__placeholder{text-align:center;color:var(--color-text-muted)}
+.video-area__placeholder i{margin-bottom:var(--space-sm)}
+
+.resources-panel{display:flex;flex-direction:column;gap:var(--space-md)}
+
+/* --- Footer --- */
+.footer{
+  margin-top:var(--space-4xl);padding:var(--space-2xl) 0;
+  border-top:var(--border-glass);text-align:center;
+}
+.footer p{font-size:var(--fs-sm);color:var(--color-text-muted)}
+.footer__links{display:flex;gap:var(--space-lg);justify-content:center;margin-top:var(--space-md)}
+.footer__links a{font-size:var(--fs-sm);color:var(--color-text-muted)}
+.footer__links a:hover{color:var(--color-accent-cyan)}
+
+/* --- Page Header (Module Pages) --- */
+.page-header{
+  padding:var(--space-3xl) 0 var(--space-xl);
+}
+.page-header__breadcrumb{
+  display:flex;align-items:center;gap:var(--space-sm);
+  font-size:var(--fs-sm);color:var(--color-text-muted);margin-bottom:var(--space-lg);
+}
+.page-header__breadcrumb a{color:var(--color-text-muted)}
+.page-header__breadcrumb a:hover{color:var(--color-accent-cyan)}
+.page-header h1{margin-bottom:var(--space-sm)}
+
+/* --- Session Tabs --- */
+.session-tabs{
+  display:flex;gap:var(--space-sm);margin-bottom:var(--space-xl);
+  border-bottom:var(--border-glass);padding-bottom:var(--space-md);
+  overflow-x:auto;
+}
+.session-tab{
+  padding:var(--space-sm) var(--space-lg);border-radius:var(--radius-full);
+  font-size:var(--fs-sm);font-weight:var(--fw-semibold);color:var(--color-text-secondary);
+  background:transparent;transition:all var(--transition-base);white-space:nowrap;cursor:pointer;
+}
+.session-tab:hover{color:var(--color-text-primary);background:var(--color-bg-glass)}
+.session-tab.active{
+  color:#fff;background:var(--gradient-primary);
+  box-shadow:var(--shadow-glow-primary);
+}
+
+/* --- Session Content Panel --- */
+.session-panel{display:none}
+.session-panel.active{display:block;animation:fadeIn .3s ease}

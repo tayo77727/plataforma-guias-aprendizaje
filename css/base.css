@@ -1,0 +1,44 @@
+/* === BASE CSS - Reset & Globals === */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:16px}
+body{
+  font-family:var(--font-body);font-size:var(--fs-base);line-height:1.6;
+  color:var(--color-text-primary);background:var(--color-bg-primary);
+  min-height:100vh;overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:'';position:fixed;top:-50%;left:-50%;width:200%;height:200%;z-index:-1;
+  background:
+    radial-gradient(ellipse at 20% 50%,rgba(124,58,237,.08) 0%,transparent 50%),
+    radial-gradient(ellipse at 80% 20%,rgba(6,214,160,.06) 0%,transparent 50%),
+    radial-gradient(ellipse at 60% 80%,rgba(56,189,248,.05) 0%,transparent 50%);
+  animation:ambientDrift 25s ease-in-out infinite alternate;
+}
+@keyframes ambientDrift{
+  0%{transform:translate(0,0) rotate(0deg)}
+  100%{transform:translate(-3%,2%) rotate(3deg)}
+}
+h1,h2,h3,h4,h5,h6{font-family:var(--font-heading);font-weight:var(--fw-bold);line-height:1.2}
+h1{font-size:var(--fs-4xl)}h2{font-size:var(--fs-3xl)}h3{font-size:var(--fs-2xl)}h4{font-size:var(--fs-xl)}
+p{color:var(--color-text-secondary);line-height:1.7}
+a{color:var(--color-accent-cyan);text-decoration:none;transition:color var(--transition-fast)}
+a:hover{color:var(--color-primary-light)}
+img{max-width:100%;height:auto;display:block}
+ul,ol{list-style:none}
+button{font-family:var(--font-body);cursor:pointer;border:none;outline:none;background:none;color:inherit}
+::-webkit-scrollbar{width:8px}
+::-webkit-scrollbar-track{background:var(--color-bg-secondary)}
+::-webkit-scrollbar-thumb{background:var(--color-primary);border-radius:var(--radius-full)}
+::selection{background:var(--color-primary);color:#fff}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.container{width:100%;max-width:1200px;margin:0 auto;padding:0 var(--space-lg)}
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.6}}
+.animate-fade-in-up{animation:fadeInUp .6s ease forwards}
+.delay-1{animation-delay:.1s}.delay-2{animation-delay:.2s}.delay-3{animation-delay:.3s}
+.delay-4{animation-delay:.4s}.delay-5{animation-delay:.5s}
+@media(max-width:768px){
+  h1{font-size:var(--fs-2xl)}h2{font-size:var(--fs-xl)}h3{font-size:var(--fs-lg)}
+}
