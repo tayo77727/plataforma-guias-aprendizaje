@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendizaje Guiado — Plataforma de Aula Invertida</title>
+    <meta name="description" content="Módulo de aprendizaje guiado con quizzes, flashcards y tutoriales de IA.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/aprendizaje.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar__logo">⚡ Plataforma</a>
+            <div class="navbar__links" id="navLinks">
+                <a href="index.html">Inicio</a>
+                <a href="modulo1.html">Módulo 1</a>
+                <a href="modulo2.html">Módulo 2</a>
+                <a href="modulo3.html">Módulo 3</a>
+                <a href="aprendizaje-guiado.html" class="nav-special active">Aprendizaje Guiado</a>
+            </div>
+            <button class="navbar__hamburger" id="hamburger" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="aprendizaje-hero">
+        <div class="container">
+            <div class="hero__badge animate-fade-in-up">
+                <i class="ph-bold ph-graduation-cap"></i>
+                Refuerzo Interactivo
+            </div>
+            <h1 class="animate-fade-in-up delay-1">
+                Aprendizaje <span class="gradient-text">Guiado</span>
+            </h1>
+            <p class="hero__subtitle animate-fade-in-up delay-2">
+                Domina los conceptos clave de cada guía a través de herramientas interactivas diseñadas para potenciar tu retención.
+            </p>
+        </div>
+    </section>
+
+    <!-- ===== TABS ===== -->
+    <div class="container">
+        <div class="learning-tabs animate-fade-in-up delay-3">
+            <button class="tab-btn active" data-tab="resumen">
+                <i class="ph ph-book-open"></i> Resumen de Guías
+            </button>
+            <button class="tab-btn" data-tab="flashcards">
+                <i class="ph ph-cards"></i> Flashcards
+            </button>
+            <button class="tab-btn" data-tab="quizzes">
+                <i class="ph ph-exam"></i> Quizzes (10 Preguntas)
+            </button>
+            <button class="tab-btn" data-tab="teachable">
+                <i class="ph ph-robot"></i> Tutorial IA
+            </button>
+        </div>
+
+        <!-- --- TAB CONTENT: RESUMEN --- -->
+        <div id="resumen" class="tab-content active">
+            <div class="content-grid" style="display: grid; gap: 3rem;">
+                <!-- Guía 1 -->
+                <div class="guide-summary-card">
+                    <h2 class="section-title"><i class="ph-bold ph-cpu"></i> Guía 1: MicroPython Essentials</h2>
+                    <div class="guide-banner">
+                        <div class="guide-banner__meta">
+                            <span><i class="ph-bold ph-calendar"></i> Semana 1</span>
+                            <span><i class="ph-bold ph-tag"></i> Programación Textual</span>
+                        </div>
+                        <p class="guide-banner__desc">El salto de bloques a código. Comprenderás la sintaxis de MicroPython para interactuar con la Micro:bit de forma autónoma.</p>
+                    </div>
+                    <div class="concepts-grid">
+                        <div class="concept-card concept-card--purple">
+                            <div class="concept-card__icon"><i class="ph ph-code"></i></div>
+                            <h6>Sintaxis Básica</h6>
+                            <p>Importación de librerías, uso de paréntesis y dos puntos.</p>
+                        </div>
+                        <div class="concept-card concept-card--cyan">
+                            <div class="concept-card__icon"><i class="ph ph-repeat"></i></div>
+                            <h6>Bucle Infinito</h6>
+                            <p>Uso de <code>while True:</code> para que el código no se detenga.</p>
+                        </div>
+                        <div class="concept-card concept-card--green">
+                            <div class="concept-card__icon"><i class="ph ph-monitor"></i></div>
+                            <h6>Salida de Datos</h6>
+                            <p>Comandos <code>display.show()</code> y <code>display.scroll()</code>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guía 3 -->
+                <div class="guide-summary-card">
+                    <h2 class="section-title"><i class="ph-bold ph-brain"></i> Guía 3: Entrenamiento de Modelos</h2>
+                    <div class="guide-banner">
+                        <div class="guide-banner__meta">
+                            <span><i class="ph-bold ph-calendar"></i> Semana 3</span>
+                            <span><i class="ph-bold ph-tag"></i> Machine Learning</span>
+                        </div>
+                        <p class="guide-banner__desc">Cómo una máquina "aprende" a través de patrones en lugar de reglas fijas. División de datos y métricas de éxito.</p>
+                    </div>
+                    <div class="concepts-grid">
+                        <div class="concept-card concept-card--orange">
+                            <div class="concept-card__icon"><i class="ph ph-database"></i></div>
+                            <h6>Dataset</h6>
+                            <p>División entre Entrenamiento (80%) y Prueba (20%).</p>
+                        </div>
+                        <div class="concept-card concept-card--purple">
+                            <div class="concept-card__icon"><i class="ph ph-chart-line"></i></div>
+                            <h6>Métricas</h6>
+                            <p>Precisión (exactitud) y Sensibilidad (Recall).</p>
+                        </div>
+                        <div class="concept-card concept-card--green">
+                            <div class="concept-card__icon"><i class="ph ph-lightning"></i></div>
+                            <h6>Optimización</h6>
+                            <p>Ajuste de Épocas y Tasa de Aprendizaje.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --- TAB CONTENT: FLASHCARDS --- -->
+        <div id="flashcards" class="tab-content">
+            <h2 class="section-title">Flashcards Interactivas</h2>
+            <p style="margin-bottom: 2rem; color: var(--color-text-muted);">Haz clic en cada tarjeta para ver la definición.</p>
+            
+            <div class="flashcards-grid">
+                <!-- Guía 1 Cards -->
+                <div class="flashcard-container">
+                    <div class="flashcard">
+                        <div class="flashcard__front">
+                            <div class="flashcard__icon"><i class="ph-bold ph-code"></i></div>
+                            <h3>while True:</h3>
+                            <span class="badge badge--in-progress">Guía 1</span>
+                        </div>
+                        <div class="flashcard__back">
+                            <p>Crea un bucle infinito que permite que el programa de la Micro:bit se ejecute continuamente sin detenerse.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flashcard-container">
+                    <div class="flashcard">
+                        <div class="flashcard__front">
+                            <div class="flashcard__icon"><i class="ph-bold ph-keyboard"></i></div>
+                            <h3>Sintaxis</h3>
+                            <span class="badge badge--in-progress">Guía 1</span>
+                        </div>
+                        <div class="flashcard__back">
+                            <p>Conjunto de reglas que definen cómo se deben escribir los comandos en un lenguaje de programación para que la máquina los entienda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flashcard-container">
+                    <div class="flashcard">
+                        <div class="flashcard__front">
+                            <div class="flashcard__icon"><i class="ph-bold ph-clock"></i></div>
+                            <h3>sleep(ms)</h3>
+                            <span class="badge badge--in-progress">Guía 1</span>
+                        </div>
+                        <div class="flashcard__back">
+                            <p>Función que pausa la ejecución del programa durante una cantidad específica de milisegundos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Guía 3 Cards -->
+                <div class="flashcard-container">
+                    <div class="flashcard">
+                        <div class="flashcard__front">
+                            <div class="flashcard__icon"><i class="ph-bold ph-database"></i></div>
+                            <h3>Dataset</h3>
+                            <span class="badge badge--completed">Guía 3</span>
+                        </div>
+                        <div class="flashcard__back">
+                            <p>Colección organizada de datos (ej. fotos, textos) que se utiliza para entrenar y evaluar un modelo de IA.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flashcard-container">
+                    <div class="flashcard">
+                        <div class="flashcard__front">
+                            <div class="flashcard__icon"><i class="ph-bold ph-warning-circle"></i></div>
+                            <h3>Overfitting</h3>
+                            <span class="badge badge--completed">Guía 3</span>
+                        </div>
+                        <div class="flashcard__back">
+                            <p>Ocurre cuando un modelo memoriza los datos de entrenamiento en lugar de aprender patrones, fallando con datos nuevos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flashcard-container">
+                    <div class="flashcard">
+                        <div class="flashcard__front">
+                            <div class="flashcard__icon"><i class="ph-bold ph-arrows-counter-clockwise"></i></div>
+                            <h3>Época</h3>
+                            <span class="badge badge--completed">Guía 3</span>
+                        </div>
+                        <div class="flashcard__back">
+                            <p>Una vuelta completa en la que el modelo de IA lee y procesa todo el conjunto de datos de entrenamiento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- --- TAB CONTENT: QUIZZES --- -->
+        <div id="quizzes" class="tab-content">
+            <div class="quiz-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+                
+                <!-- QUIZ GUIA 1 -->
+                <div class="quiz-container" data-id="guia1">
+                    <div class="quiz-start-screen">
+                        <div class="module-card__icon"><i class="ph-bold ph-cpu"></i></div>
+                        <h3>Quiz: MicroPython</h3>
+                        <p>10 preguntas sobre sintaxis y comandos básicos de la Micro:bit.</p>
+                        <button class="btn btn--primary btn-start-quiz" data-quiz="guia1">Empezar Quiz</button>
+                    </div>
+                    <div class="quiz-active-screen" style="display: none;">
+                        <div class="quiz-header">
+                            <span class="quiz-progress-text">Pregunta 1 de 10</span>
+                            <div class="progress-bar" style="width: 150px; height: 6px;">
+                                <div class="progress-bar__fill quiz-progress-fill" style="width: 10%"></div>
+                            </div>
+                        </div>
+                        <div class="question-area">
+                            <!-- Questions inject here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QUIZ GUIA 3 -->
+                <div class="quiz-container" data-id="guia3">
+                    <div class="quiz-start-screen">
+                        <div class="module-card__icon"><i class="ph-bold ph-brain"></i></div>
+                        <h3>Quiz: ML Training</h3>
+                        <p>10 preguntas sobre datasets, métricas y optimización de modelos.</p>
+                        <button class="btn btn--primary btn-start-quiz" data-quiz="guia3">Empezar Quiz</button>
+                    </div>
+                    <div class="quiz-active-screen" style="display: none;">
+                        <div class="quiz-header">
+                            <span class="quiz-progress-text">Pregunta 1 de 10</span>
+                            <div class="progress-bar" style="width: 150px; height: 6px;">
+                                <div class="progress-bar__fill quiz-progress-fill" style="width: 10%"></div>
+                            </div>
+                        </div>
+                        <div class="question-area">
+                            <!-- Questions inject here -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- --- TAB CONTENT: TEACHABLE MACHINE --- -->
+        <div id="teachable" class="tab-content">
+            <h2 class="section-title">Tutorial: Teachable Machine</h2>
+            <p style="margin-bottom: 3rem; color: var(--color-text-muted);">Guía paso a paso para entrenar tu primer modelo de IA visual (Basado en Guía 3).</p>
+
+            <div class="tm-guide">
+                <div class="tm-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Accede a la Herramienta</h3>
+                        <p>Entra a <a href="https://teachablemachine.withgoogle.com/" target="_blank" style="color: var(--color-primary-light);">teachablemachine.withgoogle.com</a> y selecciona "Image Project".</p>
+                        <div class="alert-box alert-box--info">
+                            <i class="ph ph-info"></i>
+                            Usa Chrome para una mejor experiencia con la cámara.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Define tus Clases</h3>
+                        <p>Crea etiquetas para lo que quieres que la IA reconozca. Ejemplo: "Mano Abierta" y "Mano Cerrada".</p>
+                        <div class="concept-card" style="margin-top: 1rem;">
+                            <p><strong>Dataset:</strong> Entre más fotos tomes en diferentes ángulos, mejor aprenderá tu modelo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Entrenamiento (Training)</h3>
+                        <p>Haz clic en "Train Model". Aquí es donde la IA busca los patrones que diferencian una clase de otra.</p>
+                        <div class="alert-box alert-box--warning">
+                            <i class="ph ph-warning"></i>
+                            No cierres la pestaña mientras entrena.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tm-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Prueba y Exportación</h3>
+                        <p>Prueba tu modelo frente a la cámara. Si funciona bien, haz clic en "Export Model" para usarlo en tus proyectos.</p>
+                        <button class="btn btn--success" style="margin-top: 1rem;">
+                            <i class="ph-bold ph-check"></i> ¡Listo para integrar!
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 — Plataforma de Aula Invertida · Grado 11 · Colombia 🇨🇴</p>
+            <div class="footer__links">
+                <a href="index.html">Inicio</a>
+                <a href="modulo1.html">Módulo 1</a>
+                <a href="modulo2.html">Módulo 2</a>
+                <a href="modulo3.html">Módulo 3</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/aprendizaje.js"></script>
+</body>
+</html>
