@@ -82,10 +82,13 @@
         <div>
           <!-- Video -->
           <div class="video-area">
-            <div class="video-area__placeholder">
-              <i class="ph-bold ph-video"></i>
-              <p>Video explicativo · MicroPython Básico</p>
-              <p style="font-size:var(--fs-xs);margin-top:var(--space-sm)">Próximamente: Embed de YouTube/Vimeo</p>
+            <div class="video-area__placeholder" style="padding: var(--space-xl);">
+              <i class="ph-bold ph-video-slash" style="color: var(--color-error); font-size: 3.5rem;"></i>
+              <h4 style="margin: var(--space-md) 0 var(--space-xs); color: white;">Video Externo</h4>
+              <p style="font-size: var(--fs-xs); color: var(--color-text-muted); margin-bottom: var(--space-lg); max-width: 300px;">El autor de este video ha desactivado la reproducción en sitios externos. Puedes verlo directamente en YouTube.</p>
+              <a href="https://youtu.be/qkJfIDKPp7E" target="_blank" class="btn btn--primary">
+                <i class="ph-bold ph-youtube-logo"></i> Ver en YouTube
+              </a>
             </div>
           </div>
 
@@ -300,27 +303,101 @@
     <!-- SESSION 2 PANEL -->
     <div class="session-panel" id="panel-s2">
       <h3 style="margin-bottom:var(--space-lg)">Sesión 2: Sensores y Contexto Social</h3>
+
+      <!-- Guide Info Banner -->
+      <div class="guide-banner">
+        <div class="guide-banner__meta">
+          <span><i class="ph-bold ph-calendar-blank"></i> Tiempo: 1 semana</span>
+          <span><i class="ph-bold ph-graduation-cap"></i> Grado 11.º · Tecnología</span>
+          <span><i class="ph-bold ph-eye"></i> Eje: La tecnología que detecta el entorno</span>
+        </div>
+        <p class="guide-banner__desc">Al finalizar esta guía, comprenderás cómo los <strong>sensores permiten a los sistemas tecnológicos percibir el entorno</strong>. Analizarás su uso en la vida cotidiana y evaluarás su impacto en la sociedad, proponiendo soluciones tecnológicas a problemas reales.</p>
+      </div>
+
       <div class="session-layout__grid">
         <div>
+          <!-- Video -->
           <div class="video-area">
             <div class="video-area__placeholder">
               <i class="ph-bold ph-video"></i>
-              <p>Video interactivo · Sensores en acción</p>
+              <p>Video Interactivo · Sensores en Acción</p>
               <p style="font-size:var(--fs-xs);margin-top:var(--space-sm)">Próximamente: Embed de YouTube/Vimeo</p>
             </div>
           </div>
+
+          <!-- Objective -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-target"></i> Objetivo</h4>
+            <p>Comprender, analizar y aplicar el uso de sensores para proponer soluciones tecnológicas en contextos sociales reales.</p>
+          </div>
+
+          <!-- Essential Question -->
+          <div class="content-section content-section--highlight">
+            <h4><i class="ph-bold ph-question"></i> Pregunta Esencial</h4>
+            <p><em>Si los sensores permiten que la tecnología perciba el entorno, ¿cómo influyen en nuestras decisiones, seguridad y privacidad?</em></p>
+          </div>
+
+          <!-- Learning Outcomes -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-list-checks"></i> Desempeños</h4>
+            <ul class="learning-list">
+              <li><i class="ph-bold ph-check-circle"></i> Comprende el concepto de sensor y su funcionamiento básico (entrada, proceso y salida).</li>
+              <li><i class="ph-bold ph-check-circle"></i> Identifica y compara diferentes tipos de sensores reconociendo sus características.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Aplica el conocimiento sobre sensores para analizar situaciones reales y mejorar la eficiencia.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Propone soluciones tecnológicas utilizando sensores para resolver problemáticas de su contexto.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Evalúa de manera crítica el impacto social del uso de sensores (seguridad y privacidad).</li>
+            </ul>
+          </div>
+
+          <!-- Key Content -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-book-open"></i> Contenido: ¿Qué es un Sensor?</h4>
+            <p>Un sensor es un dispositivo capaz de detectar magnitudes físicas o químicas (luz, temperatura, distancia, sonido) y transformarlas en señales eléctricas que un sistema (como la Micro:bit) puede procesar.</p>
+            
+            <div class="concepts-grid">
+              <div class="concept-card">
+                <span class="concept-card__num">1</span>
+                <h6>Entrada (Input)</h6>
+                <p>El sensor detecta un cambio en el entorno (ej. alguien se acerca).</p>
+              </div>
+              <div class="concept-card">
+                <span class="concept-card__num">2</span>
+                <h6>Proceso</h6>
+                <p>La Micro:bit recibe la señal y decide qué hacer según el código.</p>
+              </div>
+              <div class="concept-card">
+                <span class="concept-card__num">3</span>
+                <h6>Salida (Output)</h6>
+                <p>Se ejecuta una acción (ej. encender una luz o sonar una alarma).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Complete button -->
           <button class="btn btn--success btn--large btn--block" style="margin-top:var(--space-xl)"
             data-complete-btn="s2">
             <i class="ph-bold ph-check-circle"></i> Marcar sesión como completada
           </button>
         </div>
+
+        <!-- Resources Panel -->
         <div class="resources-panel">
           <h4 style="margin-bottom:var(--space-sm)"><i class="ph-bold ph-folder-open"></i> Recursos</h4>
           <div class="resource-card">
             <div class="resource-card__icon resource-card__icon--pdf"><i class="ph-bold ph-file-pdf"></i></div>
-            <h5>Guía de Ideación</h5>
-            <p>Identifica problemas sociales y propón soluciones con sensores</p>
-            <a href="#" class="btn btn--secondary"><i class="ph-bold ph-download-simple"></i> Descargar PDF</a>
+            <h5>Guía 2 — Sensores y Contexto Social</h5>
+            <p>Conceptos de sensores, tipos, aplicaciones y evaluación de impacto social.</p>
+            <a href="Recursos/Guia 2.pdf" target="_blank" class="btn btn--secondary"><i class="ph-bold ph-download-simple"></i> Descargar PDF</a>
+          </div>
+          
+          <div class="sidebar-info">
+            <h6><i class="ph-bold ph-lightning"></i> Temas Clave</h6>
+            <ul>
+              <li>Tipos de sensores (Luz, Temp, Distancia)</li>
+              <li>Lógica Entrada-Proceso-Salida</li>
+              <li>Inclusión y accesibilidad tecnológica</li>
+              <li>Ética y Privacidad en la detección</li>
+            </ul>
           </div>
         </div>
       </div>

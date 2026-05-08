@@ -49,32 +49,103 @@
     </div>
 
     <!-- SESSION 4 -->
-    <div class="session-panel active" id="panel-s4">
       <h3 style="margin-bottom:var(--space-lg)">Sesión 4: Motores e Integración Final</h3>
+
+      <!-- Guide Info Banner -->
+      <div class="guide-banner">
+        <div class="guide-banner__meta">
+          <span><i class="ph-bold ph-calendar-blank"></i> Tiempo: 1 semana</span>
+          <span><i class="ph-bold ph-graduation-cap"></i> Grado 11.º · Tecnología</span>
+          <span><i class="ph-bold ph-rocket"></i> Eje: De la Idea a la Realidad</span>
+        </div>
+        <p class="guide-banner__desc">Al finalizar esta guía, serás capaz de <strong>integrar actuadores mecánicos a tu placa Micro:bit</strong> para materializar las predicciones de tus modelos de IA. Comprenderás las bases de la robótica aplicada al transformar datos en movimientos precisos.</p>
+      </div>
+
       <div class="session-layout__grid">
         <div>
+          <!-- Video Area -->
           <div class="video-area">
             <div class="video-area__placeholder">
               <i class="ph-bold ph-video"></i>
-              <p>Video práctico · Motores y ensamble</p>
+              <p>Video Práctico · Motores e Integración</p>
               <p style="font-size:var(--fs-xs);margin-top:var(--space-sm)">Próximamente: Embed de YouTube/Vimeo</p>
             </div>
           </div>
+
+          <!-- Objective -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-target"></i> Objetivo</h4>
+            <p>Integrar físicamente servomotores con la placa Micro:bit, accionados por un modelo de Machine Learning entrenado previamente, para validar la utilidad de la IA en tareas cotidianas.</p>
+          </div>
+
+          <!-- Essential Question -->
+          <div class="content-section content-section--highlight">
+            <h4><i class="ph-bold ph-question"></i> Pregunta Esencial</h4>
+            <p><em>Si la IA permite que las máquinas tomen decisiones basadas en datos, ¿qué responsabilidades éticas y técnicas surgen cuando permitimos que un algoritmo controle el movimiento físico de un objeto?</em></p>
+          </div>
+
+          <!-- Desempeños -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-list-checks"></i> Desempeños</h4>
+            <ul class="learning-list">
+              <li><i class="ph-bold ph-check-circle"></i> Analiza el impacto de la robótica y la IA en la satisfacción de necesidades humanas.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Reconoce los principios de funcionamiento de los servomotores y su conexión a la Micro:bit.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Usa herramientas digitales para generar representaciones físicas en formato robótico.</li>
+              <li><i class="ph-bold ph-check-circle"></i> Valida y ajusta los resultados obtenidos en el movimiento físico frente a los gestos entrenados.</li>
+            </ul>
+          </div>
+
+          <!-- Key Content -->
+          <div class="content-section">
+            <h4><i class="ph-bold ph-gear"></i> Las Reglas del Movimiento</h4>
+            <p>Si la IA es el sistema de procesamiento que decide qué hacer (el cerebro), el servomotor es el músculo que ejecuta la acción. La estructura de control sigue esta secuencia:</p>
+            
+            <div class="concepts-grid">
+              <div class="concept-card">
+                <span class="concept-card__num">1</span>
+                <h6>Entrada (IA)</h6>
+                <p>El modelo reconoce un patrón (ej. Gesto de "Abrir").</p>
+              </div>
+              <div class="concept-card">
+                <span class="concept-card__num">2</span>
+                <h6>Proceso</h6>
+                <p>La Micro:bit recibe la etiqueta del modelo y la procesa.</p>
+              </div>
+              <div class="concept-card">
+                <span class="concept-card__num">3</span>
+                <h6>Salida (Actuador)</h6>
+                <p>Se envía un pulso eléctrico al pin para girar a un ángulo específico (ej. 90°).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Complete button -->
           <button class="btn btn--success btn--large btn--block" style="margin-top:var(--space-xl)" data-complete-btn="s4">
             <i class="ph-bold ph-check-circle"></i> Marcar sesión como completada
           </button>
         </div>
+
+        <!-- Resources Panel -->
         <div class="resources-panel">
           <h4 style="margin-bottom:var(--space-sm)"><i class="ph-bold ph-folder-open"></i> Recursos</h4>
           <div class="resource-card">
             <div class="resource-card__icon resource-card__icon--pdf"><i class="ph-bold ph-file-pdf"></i></div>
-            <h5>Guía de Ensamble</h5>
-            <p>Instrucciones para integrar motores con Micro:bit</p>
-            <a href="#" class="btn btn--secondary"><i class="ph-bold ph-download-simple"></i> Descargar PDF</a>
+            <h5>Guía 4 — Motores e Integración Final</h5>
+            <p>Configuración de servomotores, bloques de decisión y vinculación con IA.</p>
+            <a href="Recursos/Guia 4.pdf" target="_blank" class="btn btn--secondary"><i class="ph-bold ph-download-simple"></i> Descargar PDF</a>
+          </div>
+          
+          <div class="sidebar-info">
+            <h6><i class="ph-bold ph-cpu"></i> Hardware Necesario</h6>
+            <ul>
+              <li>Placa Micro:bit V2</li>
+              <li>Servomotor de 180 grados</li>
+              <li>Cables Caimán (Jumper)</li>
+              <li>Batería externa</li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
 
     <!-- SESSION 5 -->
     <div class="session-panel" id="panel-s5">

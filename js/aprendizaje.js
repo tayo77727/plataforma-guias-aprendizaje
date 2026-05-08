@@ -48,6 +48,18 @@ const quizzes = {
         { q: "¿Cuál es el propósito de while True:?", a: ["Ejecutar una vez", "Bucle infinito", "Comparar valores", "Detener el código"], c: 1 },
         { q: "¿Qué herramienta online se recomienda para programar Micro:bit en Python?", a: ["MakeCode", "python.microbit.org", "Arduino IDE", "VS Code"], c: 1 }
     ],
+    guia2: [
+        { q: "¿Qué es un sensor?", a: ["Un tipo de pantalla", "Dispositivo que detecta magnitudes físicas", "Un motor de alta velocidad", "Un cable de conexión"], c: 1 },
+        { q: "¿Cuál es el ciclo fundamental de un sistema con sensores?", a: ["Inicio-Fin", "Entrada-Proceso-Salida", "Carga-Descarga", "Lectura-Escritura"], c: 1 },
+        { q: "¿Cuál de estos es un ejemplo de sensor de entrada?", a: ["Bocina", "Luz/Temperatura", "Motor", "LED"], c: 1 },
+        { q: "¿Qué parte del sistema decide qué hacer con la señal del sensor?", a: ["La batería", "El cable", "La Micro:bit / Procesador", "La carcasa"], c: 2 },
+        { q: "¿Qué sensor usarías para detectar presencia en la oscuridad?", a: ["Sensor de sonido", "Sensor de luz/infrarrojo", "Sensor de humedad", "Sensor de presión"], c: 1 },
+        { q: "¿Cómo influyen los sensores en nuestra privacidad?", a: ["No influyen", "Pueden recolectar datos sin aviso", "La mejoran siempre", "Hacen todo público"], c: 1 },
+        { q: "¿Qué es una magnitud física?", a: ["Un comando de código", "Luz, temperatura o presión", "Un tipo de archivo", "Una marca de sensores"], c: 1 },
+        { q: "¿Para qué sirve la etapa de Salida (Output)?", a: ["Para leer datos", "Para ejecutar una acción física", "Para borrar el código", "Para cargar la batería"], c: 1 },
+        { q: "¿Qué ventaja social tienen los sensores?", a: ["Son decorativos", "Mejoran eficiencia y seguridad", "Hacen el código más largo", "No tienen ventajas"], c: 1 },
+        { q: "¿Qué responsabilidad ética surge al usar sensores?", a: ["Usar colores bonitos", "Protección de datos y consentimiento", "Comprar los más caros", "No usar baterías"], c: 1 }
+    ],
     guia3: [
         { q: "¿Qué es un Dataset?", a: ["Un tipo de cable", "Conjunto de datos históricos", "Un motor de búsqueda", "Una marca de IA"], c: 1 },
         { q: "¿En qué dos partes se divide generalmente un dataset?", a: ["Inicio y Fin", "Hardware y Software", "Entrenamiento y Prueba", "Input y Output"], c: 2 },
@@ -59,6 +71,18 @@ const quizzes = {
         { q: "¿Para qué sirve la Función de Pérdida (Loss Function)?", a: ["Para borrar datos", "Para medir el error del modelo", "Para ahorrar energía", "Para aumentar la velocidad"], c: 1 },
         { q: "¿Qué ventaja tiene el entrenamiento en la nube?", a: ["Es más barato", "Usa IA satelital", "Mayor potencia de procesamiento", "No necesita internet"], c: 2 },
         { q: "¿Qué es la Sensibilidad (Recall)?", a: ["Capacidad de encontrar todos los casos reales positivos", "Qué tan amable es la IA", "La resolución de pantalla", "El volumen del sonido"], c: 0 }
+    ],
+    guia4: [
+        { q: "¿Qué componente actúa como el 'músculo' en robótica?", a: ["El sensor", "El actuador / servomotor", "El cable USB", "La batería"], c: 1 },
+        { q: "¿Qué es un actuador?", a: ["Un tipo de código", "Componente que convierte señales en movimiento", "Una pantalla LED", "Un sensor de luz"], c: 1 },
+        { q: "¿A qué pines de la Micro:bit se conectan los servos?", a: ["Solo al pin 3", "Pines 0, 1 o 2", "Al puerto USB", "Al sensor de luz"], c: 1 },
+        { q: "¿Cuál es el rango de giro de un servo estándar?", a: ["0 a 360 grados", "0 a 180 grados", "Solo 90 grados", "Giro infinito"], c: 1 },
+        { q: "¿Qué etapa sigue al reconocimiento de un patrón por la IA?", a: ["Apagar la placa", "Procesamiento en Micro:bit", "Enviar un correo", "Borrar el modelo"], c: 1 },
+        { q: "¿Para qué sirven los bloques de decisión lógica?", a: ["Para sumar números", "Para vincular etiquetas de IA con acciones físicas", "Para cambiar el color del LED", "No sirven para nada"], c: 1 },
+        { q: "¿Qué es un pulso eléctrico para un motor?", a: ["Una descarga peligrosa", "La señal que indica la posición", "Música para el robot", "Energía solar"], c: 1 },
+        { q: "¿Por qué es necesario validar la respuesta física?", a: ["Por estética", "Para asegurar que coincide con la predicción de IA", "Para gastar más batería", "Para que el robot sea más pesado"], c: 1 },
+        { q: "¿Cuál es una responsabilidad técnica al controlar objetos?", a: ["Usar cables largos", "Seguridad y precisión del movimiento", "Que el robot sea rápido", "Usar mucha memoria"], c: 2 },
+        { q: "¿Si el modelo detecta 'Abrir', qué hace el motor?", a: ["Se detiene", "Gira a un ángulo específico (ej. 90°)", "Empieza a vibrar", "Muestra un mensaje"], c: 1 }
     ]
 };
 
